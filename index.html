@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css">
+        <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v6.3.0/css/pro.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+        <link href="https://fonts.cdnfonts.com/css/akrobat" rel="stylesheet">
+                
+        <link rel="stylesheet" href="notify.css">
+    </head>
+
+    <body bgcolor="grey">
+        <div class="Notify" :style="{zoom:zoom}">
+            <div class="Notify-Cont">
+                <div class="Texts">
+                    <div class="Title">Succes</div>
+                    <div class="Desc">Small notification text are there</div>
+                    <div class="Pg">
+                        <div class="Progress" :style="{ width: timer+'%' }"></div>
+                    </div>
+                </div>
+                <div class="Icon">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+            </div>
+        </div>
+        <script>
+            Vue.filter('formatnum', (x) => {
+                return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+            })
+        </script>
+        <script src="notify.js"></script>
+    </body>
+</html>

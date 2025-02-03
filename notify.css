@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url(gilroy-regular.ttf);
+}
+
+.Notify {
+    position: absolute;
+    right: 25px;
+    top: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+
+    user-select: none;
+}
+
+.Notify > .Notify-Cont {
+    width: 190px;
+    height: 70px;
+    padding: 5px;
+
+    background: url(BgSucces.png) no-repeat;
+    background-size: cover;
+
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    gap: 5px;
+}
+
+.Notify > .Notify-Cont > .Icon {
+    font-size: 22px;
+    color: #FFF;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.Notify > .Notify-Cont > .Texts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+
+    width: 80%;
+    height: 90%;
+    
+    margin-right: 10px;
+}
+
+.Notify > .Notify-Cont > .Texts > .Title {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.Notify > .Notify-Cont > .Texts > .Desc {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: right;
+    color: #FFFFFF;
+
+    width: 120px;
+}
+
+.Notify > .Notify-Cont > .Texts > .Pg {
+    width: 131px;
+    height: 4px;
+
+    background: rgba(0, 0, 0, 0.24);
+    border-radius: 3px;
+
+    margin-top: 5px;
+}
+
+.Notify > .Notify-Cont > .Texts > .Pg > .Progress {
+    width: 50%;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 50px;
+    box-shadow: 0 0 15px #ffffff;
+    transition: .1s linear;
+}
